@@ -61,7 +61,6 @@ contract OurTokenTest is Test {
     }
 
     function testDeployerHasInitialSupply() public view {
-
-        assertEq(ourToken.balanceOf(address(msg.sender)), deployer.INITIAL_SUPPLY()-STARTING_BALANCE);
+        assertEq(ourToken.balanceOf(address(msg.sender)), deployer.INITIAL_SUPPLY() - STARTING_BALANCE);
     }
 }
